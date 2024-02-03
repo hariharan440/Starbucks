@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon (2).ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="images/logo.png" alt="logo"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><span class="themeSwitch"></span></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just coffee<br>It's <span class="starbucks">Starbucks</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe doloremque labore adipisci porro voluptatem exercitationem possimus beatae aperiam deserunt ex neque voluptas, magnam tenetur suscipit? A ipsa sequi velit temporibus.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/buks.png" alt="">
+            </div>
+        </div>
+        <ul class="sci"> 
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </section>
+
+    <script>
+let themeSwitch = document.querySelector('.themeSwitch');
+let body = document.querySelector('body');
+let starbucksText = document.querySelector('.starbucks');
+
+themeSwitch.onclick = function(){
+    themeSwitch.classList.toggle('active');
+    body.classList.toggle('dark');
+    starbucksText.classList.toggle('green');
+}
+
+    </script>
+</body>
+</html>
